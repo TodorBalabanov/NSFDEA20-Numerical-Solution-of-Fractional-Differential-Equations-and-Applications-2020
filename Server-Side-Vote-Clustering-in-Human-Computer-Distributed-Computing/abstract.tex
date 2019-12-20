@@ -30,10 +30,18 @@ The usage of artificial neural networks in financial forecasting as distributed 
 \vspace*{3mm}
 \underline{Vote Clustering with Self-Organizing Maps} \\
 
+As it was developed initially VitoshaTrade project does not use human opinion in financial forecasting process. Modern capabilities of Android OS mobile devices offer way in which human vote can be gently collected. In this research an innovation human-computer distributed computing voting is proposed. On Android screen on daily basis notification is shown and the user is provoked to vote up or down for particular currency pair value change. The information provided by the users is collected on lightweight PHP/MySQL server application. \\
+
+In order users' vote to be used for future forecasting collected information should be grouped according each single user voting frequency and each user guess success rate. Such problem can be efficiently solved with self-organizing maps. In this research four groups (clusters) are point of interest: 1) Users with high voting frequency and high guess rate; 2) Users with low voting frequency, but high guess rate; 3) Users with low voting frequency and low guess rate; 4) Users with high voting frequency, but high voting rate. Finding the boundaries of the four groups is a little bit complicated and that is way self-organizing maps are the perfect tool for such clustering problem. The networks is trained with the information collected from different users with different activity. Some of the users have longer period of system usage and they provide better spread in time information. Number of successful guesses, number of unsuccessful guesses and rate of voting days are supplied as network input. \\
+
+Financial forecasting can be very complicated because of the high number of depending factors. Even the successful users do mistakes in their forecasts. For each user in the system personal success rate is calculated, but when future forecast should be calculated each user participate with its rating and correction coefficient given to one of the four groups in which he was classified. By such process of forecast establishment group of people proposes a subjective opinion for the future change of the currency pair value. Some people vote according their education, other people vote according their personal calculations when third group of people just vote inspired only by their intuition, even when they are not capable to explain why they think like this. In psychology it is well known that group of people can achieve much better solutions than best efforts even from the top experts in particular field. 
+
 \vspace*{3mm}
 \underline{Conclusions} \\
 
-Human-computer distributed computing can be very promising tool for financial forecasting. Trading intuition is something that is not achievable with the nowadays computers. Aggregated opinion of group of people in combination with their knowledge and subconscious information processing can lead to much more reliable forecast results. With the support of modern mobile devices and wireless communication channels human-computer based distributed computing becomes widely accessible and cost effective. 
+Human-computer distributed computing can be very promising tool for financial forecasting. Trading intuition is something that is not achievable with the nowadays computers. Aggregated opinion of group of people in combination with their knowledge and subconscious information processing can lead to much more reliable forecast results. With the support of modern mobile devices and wireless communication channels human-computer based distributed computing becomes widely accessible and cost effective. \\
+
+The biggest disadvantage of group decision making is that it is always difficult to prove correctness of the decisions taken and it is always difficult to repeat the same solution. 
 
 \vspace*{3mm}
 \underline{Acknowledgments} \\
